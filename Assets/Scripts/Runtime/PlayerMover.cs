@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Splines;
-using Vertx.Attributes;
 
 public class PlayerMover : MonoBehaviour
 {
@@ -9,6 +8,7 @@ public class PlayerMover : MonoBehaviour
 
     private void Start ()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _splineAnimate.Container = _controller.Container;
         _splineAnimate.Play();
     }
