@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7c04751e81bfb404bb12310736e12558
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _deathParticles: {fileID: 198146752706458318, guid: 4dd02b5f854b6c84990fbeb810abffe4,
+      type: 3}
+  - _particleSpawnPoint: {instanceID: 0}
+  - _hitSound: {fileID: 6418180475301049370, guid: 26d3d0ffc0fc2d34bb08e8d348ef55da,
+      type: 2}
+  - _breakSound: {fileID: 6418180475301049370, guid: 9c7eefecaa0ed2f439307e737c89762a,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
