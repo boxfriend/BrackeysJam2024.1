@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-3822755647991915305
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FIREARM_Assault_Rifle_Model_01_Fire_Single_RR2_stereo_{-3822755647991915305}
+  m_AudioClip: {fileID: 8300000, guid: 9d3e45f5c63735545851c0f2a9f64e02, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4485951189695684090
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FIREARM_Assault_Rifle_Model_01_Fire_Single_RR1_stereo_{4485951189695684090}
+  m_AudioClip: {fileID: 8300000, guid: 52eee3472cd0d7744a172523797ea3ea, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GunshotRandomContainer
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 4485951189695684090}
+  - {fileID: -3822755647991915305}
+  - {fileID: 6775539353240226693}
+  m_AvoidRepeatingLast: 1
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &6775539353240226693
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FIREARM_Assault_Rifle_Model_01_Fire_Single_RR3_stereo_{6775539353240226693}
+  m_AudioClip: {fileID: 8300000, guid: 19576595c18f7cf4188fdd89e99e2cc3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
