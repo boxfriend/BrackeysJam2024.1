@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7861410229211904541}
   - component: {fileID: -5789919716162492577}
   - component: {fileID: 1259217823406014595}
-  m_Layer: 0
+  - component: {fileID: 82865847262156236}
+  m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +84,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 0.1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &82865847262156236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065006833681392190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992136a71d3b6544aa0d3aeeb5f19e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 1
 --- !u!1001 &4069859039899726191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,6 +108,10 @@ PrefabInstance:
     - target: {fileID: 1886906540461510, guid: 90f965259c782c74a830882af458b544, type: 3}
       propertyPath: m_Name
       value: Smoke_Small_Light_FX
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886906540461510, guid: 90f965259c782c74a830882af458b544, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4726195141619606, guid: 90f965259c782c74a830882af458b544, type: 3}
       propertyPath: m_LocalScale.x
@@ -189,6 +207,10 @@ PrefabInstance:
     - target: {fileID: 1814506945658592, guid: db8d6ebe0a80601458a02ea82de28877, type: 3}
       propertyPath: m_Name
       value: SM_Icon_Ammo_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814506945658592, guid: db8d6ebe0a80601458a02ea82de28877, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4933795231260396, guid: db8d6ebe0a80601458a02ea82de28877, type: 3}
       propertyPath: m_LocalScale.x
