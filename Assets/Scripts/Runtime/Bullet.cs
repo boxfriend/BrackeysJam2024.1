@@ -11,12 +11,24 @@ public class Bullet : MonoBehaviour
 
     public void Freeze()
     {
-        _rigidbody.angularVelocity = Vector3.zero;
-        _rigidbody.velocity = Vector3.zero;
+        _rigidbody.collisionDetectionMode = CollisionDetectionMode.Discrete;
+        ResetVelocity();
         _rigidbody.isKinematic = true;
     }
 
-    public void UnFreeze () => _rigidbody.isKinematic = false;
+    public void UnFreeze ()
+    {
+        _rigidbody.isKinematic = false;
+        _rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+        ResetVelocity();
+    }
+
+    private void ResetVelocity()
+    {
+        _rigidbody.angularVelocity = Vector3.zero;
+        _rigidbody.velocity = Vector3.zero;
+    }
+
     public void Shoot (Vector3 shootForce) => _rigidbody.AddRelativeForce(shootForce, ForceMode.Impulse);
 
     private void OnCollisionEnter (Collision collision)
