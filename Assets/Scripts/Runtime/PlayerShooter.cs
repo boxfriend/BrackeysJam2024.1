@@ -12,12 +12,12 @@ public class PlayerShooter : MonoBehaviour
     [Space(5)]
     [SerializeField] private float _delayTime;
     private float _lastFireTime;
-    private ObjectPool<Rigidbody> _bulletPool;
+    private ObjectPool<Bullet> _bulletPool;
 
     [Header("VFX")]
     [SerializeField] private CinemachineImpulseSource _impulse;
     [SerializeField] private float _recoilForce;
-    [SerializeField] private Rigidbody _prefab;
+    [SerializeField] private Bullet _prefab;
     [SerializeField] private float _bulletForce;
 
     [Header("SFX")]
@@ -45,17 +45,29 @@ public class PlayerShooter : MonoBehaviour
         _audioSource.resource = _clip;
         _audioSource.Play();
 
-        var bullet = Instantiate(_prefab, _shootPoint.position, _shootPoint.rotation);
-        bullet.AddRelativeForce(Vector3.forward * _bulletForce, ForceMode.Impulse);
+        var bullet = _bulletPool.FromPool();
+        bullet.Shoot(Vector3.forward * _bulletForce);
     }
 
-    private Rigidbody CreateBullet() => Instantiate(_prefab, _shootPoint.position, _shootPoint.rotation);
-    private void ReturnToPool (Rigidbody bullet) => bullet.gameObject.SetActive(false);
-    private void GetFromPool(Rigidbody bullet)
+    private Bullet CreateBullet ()
+    {
+        var bullet = Instantiate(_prefab, _shootPoint.position, _shootPoint.rotation);
+        bullet.OnCollide += ReturnBulletToPool;
+        return bullet;
+    }
+    private void ReturnBulletToPool (Bullet bullet) => _bulletPool.ToPool(bullet);
+    private void ReturnToPool (Bullet bullet)
+    {
+        bullet.Freeze();
+        bullet.gameObject.SetActive(false);
+    }
+
+    private void GetFromPool(Bullet bullet)
     {
         var obj = bullet.gameObject;
         obj.SetActive(true);
         obj.transform.SetPositionAndRotation(_shootPoint.position, _shootPoint.rotation);
+        bullet.UnFreeze();
     }
-    private void DestroyPooledObject(Rigidbody bullet) => Destroy(bullet.gameObject);
+    private void DestroyPooledObject(Bullet bullet) => Destroy(bullet.gameObject);
 }
