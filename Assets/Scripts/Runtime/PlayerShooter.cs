@@ -53,6 +53,9 @@ public class PlayerShooter : MonoBehaviour
     {
         var bullet = Instantiate(_prefab, _shootPoint.position, _shootPoint.rotation);
         bullet.OnCollide += ReturnBulletToPool;
+        
+        ReturnToPool(bullet);
+        
         return bullet;
     }
     private void ReturnBulletToPool (Bullet bullet) => _bulletPool.ToPool(bullet);
@@ -65,8 +68,8 @@ public class PlayerShooter : MonoBehaviour
     private void GetFromPool(Bullet bullet)
     {
         var obj = bullet.gameObject;
-        obj.SetActive(true);
         obj.transform.SetPositionAndRotation(_shootPoint.position, _shootPoint.rotation);
+        obj.SetActive(true);
         bullet.UnFreeze();
     }
     private void DestroyPooledObject(Bullet bullet) => Destroy(bullet.gameObject);
