@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1
+  _rigidbody: {fileID: -5789919716162492577}
 --- !u!1001 &4069859039899726191
 PrefabInstance:
   m_ObjectHideFlags: 0
