@@ -9,7 +9,7 @@ public class ScoreTracker : SingletonBehaviour<ScoreTracker>
 
     public event Action<int, bool> OnScoreUpdated;
 
-    private const string _highScoreKey = "HighScore";
+    public const string HighScoreKey = "HighScore";
 
     public void IncreaseScore (int score)
     {
@@ -18,11 +18,11 @@ public class ScoreTracker : SingletonBehaviour<ScoreTracker>
         HighScore = Mathf.Max(Score, HighScore);
     }
 
-    private void Awake () => HighScore = PlayerPrefs.GetInt(_highScoreKey);
-    private void OnDestroy () => PlayerPrefs.SetInt(_highScoreKey, HighScore);
+    private void Awake () => HighScore = PlayerPrefs.GetInt(HighScoreKey);
+    private void OnDestroy () => PlayerPrefs.SetInt(HighScoreKey, HighScore);
 
 #if UNITY_EDITOR
     [UnityEditor.MenuItem("Tools/Boxfriend/Reset High Score")]
-    private static void ResetHighScore () => PlayerPrefs.DeleteKey(_highScoreKey);
 #endif
+    public static void ResetHighScore () => PlayerPrefs.DeleteKey(HighScoreKey);
 }
