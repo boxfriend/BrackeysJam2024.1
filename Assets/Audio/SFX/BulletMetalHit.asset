@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-4199969381878311930
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IMPACT_Bullet_Metal_18_mono_{-4199969381878311930}
+  m_AudioClip: {fileID: 8300000, guid: 55ceac0db32575d44ba25f762ca2fd12, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1844476962759707898
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IMPACT_Bullet_Metal_20_mono_{-1844476962759707898}
+  m_AudioClip: {fileID: 8300000, guid: d5aa95001ff94814f9142e7601438f3c, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3480994851768474843
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IMPACT_Bullet_Metal_05_mono_{3480994851768474843}
+  m_AudioClip: {fileID: 8300000, guid: 61d8cacb0f47db04e8f6b9e57cebf76a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4264576302193389655
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IMPACT_Bullet_Metal_22_mono_{4264576302193389655}
+  m_AudioClip: {fileID: 8300000, guid: 145dd300e164a7d4585bf554422921b5, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4808730963275936397
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IMPACT_Bullet_Metal_04_mono_{4808730963275936397}
+  m_AudioClip: {fileID: 8300000, guid: e9b1a4af55a53834f9a1ebd0220762fe, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &6195543861639322846
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IMPACT_Bullet_Metal_14_mono_{6195543861639322846}
+  m_AudioClip: {fileID: 8300000, guid: 33134f0521c14e0459ad36eb47a00177, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BulletMetalHit
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 8537155593753845283}
+  - {fileID: 4808730963275936397}
+  - {fileID: 3480994851768474843}
+  - {fileID: 6195543861639322846}
+  - {fileID: -4199969381878311930}
+  - {fileID: -1844476962759707898}
+  - {fileID: 4264576302193389655}
+  m_AvoidRepeatingLast: 2
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &8537155593753845283
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IMPACT_Bullet_Metal_01_mono_{8537155593753845283}
+  m_AudioClip: {fileID: 8300000, guid: e79dc466f0d28c1469a4cc88291f4ecf, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
