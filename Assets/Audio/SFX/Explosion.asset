@@ -1,5 +1,75 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-3648884748195167218
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_19_mono_{-3648884748195167218}
+  m_AudioClip: {fileID: 8300000, guid: 6ea0e8d6c7424aa429f41d27e2b5943e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1554590326730260140
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_18_mono_{-1554590326730260140}
+  m_AudioClip: {fileID: 8300000, guid: d49e78a56e8425643ac77fd568416c86, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &470259982867429560
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_17_mono_{470259982867429560}
+  m_AudioClip: {fileID: 8300000, guid: f0007618a61d86f4090707d2dad28db7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &671183926740870692
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_15_mono_{671183926740870692}
+  m_AudioClip: {fileID: 8300000, guid: 2c073c45682ec5846994690fec6bb239, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1961139510884196568
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_14_mono_{1961139510884196568}
+  m_AudioClip: {fileID: 8300000, guid: 7619cb365ec8f9047ac1fde0d42edc0c, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3929210180531841741
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_10_mono_{3929210180531841741}
+  m_AudioClip: {fileID: 8300000, guid: 75da1b45f2a1d7046a7dc3f5484752fa, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4583486587067384961
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_09_mono_{4583486587067384961}
+  m_AudioClip: {fileID: 8300000, guid: 59c9213c684254e469b6ceda11dd321e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
 AudioRandomContainer:
   m_ObjectHideFlags: 0
@@ -15,13 +85,31 @@ AudioRandomContainer:
   m_PitchRandomizationRange: {x: 0, y: 0}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
-  m_Elements: []
-  m_AvoidRepeatingLast: 0
-  m_PlaybackMode: 0
-  m_TriggerMode: 1
+  m_Elements:
+  - {fileID: 7709714860710562615}
+  - {fileID: 4583486587067384961}
+  - {fileID: 3929210180531841741}
+  - {fileID: -3648884748195167218}
+  - {fileID: -1554590326730260140}
+  - {fileID: 470259982867429560}
+  - {fileID: 671183926740870692}
+  - {fileID: 1961139510884196568}
+  m_AvoidRepeatingLast: 2
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
   m_AutomaticTriggerMode: 1
   m_LoopMode: 2
   m_VolumeRandomizationEnabled: 0
   m_PitchRandomizationEnabled: 0
   m_AutomaticTriggerTimeRandomizationEnabled: 0
   m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7709714860710562615
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EXPLOSION_Arcade_01_mono_{7709714860710562615}
+  m_AudioClip: {fileID: 8300000, guid: e85633a48525eaf41b1f2e37c72fee86, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
