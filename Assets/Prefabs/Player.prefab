@@ -155,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145099868148557387}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.9997868, z: -0, w: 0.020650439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.009077663, y: 1.451, z: -0.036422372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -173,7 +173,7 @@ RotationConstraint:
   m_Enabled: 1
   serializedVersion: 2
   m_Weight: 1
-  m_RotationAtRest: {x: 0, y: -177.63347, z: 0}
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_AffectRotationX: 1
   m_AffectRotationY: 1
@@ -474,7 +474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8292404532298639160}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9997868, z: 0, w: 0.020650528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -553,8 +553,7 @@ MonoBehaviour:
   _delayTime: 0.5
   _impulse: {fileID: 8026282635015621801}
   _recoilForce: 1
-  _prefab: {fileID: -5789919716162492577, guid: 62cec2609b2b6d646959f3dccf9560da,
-    type: 3}
+  _prefab: {fileID: 82865847262156236, guid: 62cec2609b2b6d646959f3dccf9560da, type: 3}
   _bulletForce: 20
   _audioSource: {fileID: 2010915239738104733}
   _clip: {fileID: 6418180475301049370, guid: 7b1efa062ff70cf4b9d35b5b8f1b9644, type: 2}
