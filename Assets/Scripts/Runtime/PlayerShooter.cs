@@ -1,4 +1,5 @@
-﻿using Cinemachine;
+﻿using Boxfriend.Utils;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
@@ -11,6 +12,7 @@ public class PlayerShooter : MonoBehaviour
     [Space(5)]
     [SerializeField] private float _delayTime;
     private float _lastFireTime;
+    private ObjectPool<Rigidbody> _bulletPool;
 
     [Header("VFX")]
     [SerializeField] private CinemachineImpulseSource _impulse;
@@ -22,7 +24,12 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioResource _clip;
 
-    private void Awake () => _inputAction.performed += (_) => OnShoot();
+    private void Awake ()
+    {
+        _inputAction.performed += (_) => OnShoot();
+        _bulletPool = new(CreateBullet, GetFromPool, ReturnToPool, DestroyPooledObject, 20, 40);
+    }
+
     private void OnEnable () => _inputAction.Enable();
     private void OnDisable () => _inputAction.Disable();
     private void OnDestroy () => _inputAction.Dispose();
@@ -41,4 +48,14 @@ public class PlayerShooter : MonoBehaviour
         var bullet = Instantiate(_prefab, _shootPoint.position, _shootPoint.rotation);
         bullet.AddRelativeForce(Vector3.forward * _bulletForce, ForceMode.Impulse);
     }
+
+    private Rigidbody CreateBullet() => Instantiate(_prefab, _shootPoint.position, _shootPoint.rotation);
+    private void ReturnToPool (Rigidbody bullet) => bullet.gameObject.SetActive(false);
+    private void GetFromPool(Rigidbody bullet)
+    {
+        var obj = bullet.gameObject;
+        obj.SetActive(true);
+        obj.transform.SetPositionAndRotation(_shootPoint.position, _shootPoint.rotation);
+    }
+    private void DestroyPooledObject(Rigidbody bullet) => Destroy(bullet.gameObject);
 }
