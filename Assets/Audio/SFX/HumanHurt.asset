@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-7407957021914641179
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_Hurt_With_Cough_mono_{-7407957021914641179}
+  m_AudioClip: {fileID: 8300000, guid: 525183db070611541a7369a24af6cdfb, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4519648095770929664
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_04_mono_{-4519648095770929664}
+  m_AudioClip: {fileID: 8300000, guid: f5557dc027b811c45a3021123e0591b4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3350894385209686591
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_Quick_Deep_mono_{-3350894385209686591}
+  m_AudioClip: {fileID: 8300000, guid: b566d6dc1afa2e14da7b89e98a50ddf0, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2986540123156056585
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_Hurt_02_mono_{-2986540123156056585}
+  m_AudioClip: {fileID: 8300000, guid: 9e44953b7c3080d478b9e242a67ab9c0, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2389025410581911712
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_Hurt_01_mono_{-2389025410581911712}
+  m_AudioClip: {fileID: 8300000, guid: 883133fffbfc825499eb9c4b2ed56a0d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2374658428461351182
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_03_mono_{-2374658428461351182}
+  m_AudioClip: {fileID: 8300000, guid: d03cb854194d8b948a9eff6065ea9728, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1851622898384634850
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_01_mono_{-1851622898384634850}
+  m_AudioClip: {fileID: 8300000, guid: a4e803a901dee444c82fbd45bba758a0, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-980216164213149164
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_02_mono_{-980216164213149164}
+  m_AudioClip: {fileID: 8300000, guid: 0cd1f22ca145bf343a56187c1f9ac087, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-827647441453687580
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VOICE_Girl_4yo_Hurt_Short_06_mono_{-827647441453687580}
+  m_AudioClip: {fileID: 8300000, guid: 05885cbe3ef8a0241a0eebe5fd449328, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-215052672688483103
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VOICE_Boy_6yo_Hurt_Short_01_mono_{-215052672688483103}
+  m_AudioClip: {fileID: 8300000, guid: 6c31922e88c5985479261e54082bea3d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &831592048790024331
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_08_mono_{831592048790024331}
+  m_AudioClip: {fileID: 8300000, guid: 541dbe29cb83c7946956d52732c7701f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4233027721648786235
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_06_mono_{4233027721648786235}
+  m_AudioClip: {fileID: 8300000, guid: b1fc381d5d876f046b26c9df42b7e3fe, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4691105507548295839
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_07_mono_{4691105507548295839}
+  m_AudioClip: {fileID: 8300000, guid: 829dfe614e7bcf847ae519942fcb25dd, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5705009159096884178
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_Hurt_04_mono_{5705009159096884178}
+  m_AudioClip: {fileID: 8300000, guid: afce792d0e1e3a841ab2f4ae603db0a1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HumanHurt
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -1851622898384634850}
+  - {fileID: -980216164213149164}
+  - {fileID: -2374658428461351182}
+  - {fileID: -4519648095770929664}
+  - {fileID: 7012653880538448975}
+  - {fileID: 4233027721648786235}
+  - {fileID: 4691105507548295839}
+  - {fileID: 831592048790024331}
+  - {fileID: -2389025410581911712}
+  - {fileID: -2986540123156056585}
+  - {fileID: 5705009159096884178}
+  - {fileID: -7407957021914641179}
+  - {fileID: -3350894385209686591}
+  - {fileID: 7329773880056741239}
+  - {fileID: 8604679474939280082}
+  - {fileID: -215052672688483103}
+  - {fileID: -827647441453687580}
+  m_AvoidRepeatingLast: 3
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7012653880538448975
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_B_Hurt_Short_05_mono_{7012653880538448975}
+  m_AudioClip: {fileID: 8300000, guid: e32ceafbe67c43646b3474d50a888d81, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7329773880056741239
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_Quick_mono_{7329773880056741239}
+  m_AudioClip: {fileID: 8300000, guid: 5a89688bc38f69e469fe0ed4b38e1b48, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &8604679474939280082
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GRUNT_Male_Subtle_Hurt_mono_{8604679474939280082}
+  m_AudioClip: {fileID: 8300000, guid: acc2591a39cedb04494f08bd57b9febb, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
