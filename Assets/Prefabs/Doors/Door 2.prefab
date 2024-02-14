@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 895387494831101724}
   - component: {fileID: 4578075360876302030}
   - component: {fileID: 4372450643587137856}
+  - component: {fileID: -7995445893551069805}
   m_Layer: 0
   m_Name: Door 2
   m_TagString: Untagged
@@ -202,7 +203,7 @@ Transform:
   m_GameObject: {fileID: 5925743297056453664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.445388, y: 1.34, z: -13.490118}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -210,6 +211,7 @@ Transform:
   - {fileID: 6484476211514576682}
   - {fileID: 8954822167277582364}
   - {fileID: 6462598558632410844}
+  - {fileID: 8419402486046404875}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &6872499101122177277
@@ -342,6 +344,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: -7995445893551069805}
+        m_TargetAssemblyTypeName: RandomSpawner, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &895387494831101724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +398,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef0d3d32d3811a498106ead6bf29421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7995445893551069805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5925743297056453664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f0c2a79fd4b7438c45152af46fbed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomSpawns:
+  - {fileID: 1016087782983963205, guid: 16dc307b5abc3f54ea6a926355c4f55f, type: 3}
+  - {fileID: 7428980671419728114, guid: 3339eb9753dd93f4cb983087062d615c, type: 3}
+  - {fileID: 2382637020169407848, guid: 3cca5ce1e4e3c8645831fc9fa3df0178, type: 3}
+  _spawnPoint: {fileID: 8419402486046404875}
+--- !u!1 &6094972595158448155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8419402486046404875}
+  m_Layer: 0
+  m_Name: RandomSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8419402486046404875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6094972595158448155}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: -1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6789147429752837393}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7593617301179934086
 GameObject:
   m_ObjectHideFlags: 0
