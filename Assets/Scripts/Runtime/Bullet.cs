@@ -33,7 +33,6 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter (Collision collision)
     {
-        Debug.Log(collision.gameObject, collision.gameObject);
         if (collision.collider.TryGetComponent(out DamageTaker damager))
             damager.Damage(_damage);
 
