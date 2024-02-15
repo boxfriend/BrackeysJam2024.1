@@ -8,8 +8,8 @@ public class ScoreDisplay : MonoBehaviour
     {
         var scoreTracker = ScoreTracker.Instance;
 
-        _highScoreDisplay.text = scoreTracker.HighScore.ToString();
-        _scoreDisplay.text = scoreTracker.Score.ToString();
+        _highScoreDisplay.text = scoreTracker.HighScore.ToString("N0");
+        _scoreDisplay.text = scoreTracker.Score.ToString("N0");
 
         scoreTracker.OnScoreUpdated += UpdateScore;
     }
