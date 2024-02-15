@@ -73,4 +73,6 @@ public class PlayerShooter : MonoBehaviour
         bullet.UnFreeze();
     }
     private void DestroyPooledObject(Bullet bullet) => Destroy(bullet.gameObject);
+
+    public void OnPause (bool isPaused) => enabled = !isPaused;
 }
