@@ -31,4 +31,6 @@ public class TimerDisplay : MonoBehaviour
             OnTimerEnd?.Invoke();
         }
     }
+
+    public void OnPause (bool isPaused) => enabled = !isPaused;
 }
