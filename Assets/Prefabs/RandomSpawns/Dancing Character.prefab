@@ -140,6 +140,8 @@ GameObject:
   - component: {fileID: 1299094780138474663}
   - component: {fileID: 3529610749151824222}
   - component: {fileID: 3840753783424843763}
+  - component: {fileID: 5288891678896432479}
+  - component: {fileID: 8064034939088866522}
   m_Layer: 0
   m_Name: Dancing Character
   m_TagString: Untagged
@@ -235,6 +237,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8064034939088866522}
+        m_TargetAssemblyTypeName: SFXPlayer, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -308,6 +322,44 @@ MonoBehaviour:
   - {fileID: 6223629815183243769}
   - {fileID: 2187061224371816652}
   - {fileID: 3594245228938521643}
+--- !u!136 &5288891678896432479
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016087782983963205}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8064034939088866522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016087782983963205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3eaaa32fde007469bffb2571c7f19f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundResource: {fileID: 6418180475301049370, guid: ef799a17107553f4aaab381866ee6bf6,
+    type: 2}
+  _soundPosition: {fileID: 8900039432124821493}
 --- !u!1 &1087336524333571189
 GameObject:
   m_ObjectHideFlags: 0
