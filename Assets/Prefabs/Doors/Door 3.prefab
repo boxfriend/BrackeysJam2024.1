@@ -557,8 +557,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3f0c2a79fd4b7438c45152af46fbed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _randomSpawns:
-  - {fileID: 1016087782983963205, guid: 16dc307b5abc3f54ea6a926355c4f55f, type: 3}
-  - {fileID: 7428980671419728114, guid: 3339eb9753dd93f4cb983087062d615c, type: 3}
-  - {fileID: 3749441495523868717, guid: 3cca5ce1e4e3c8645831fc9fa3df0178, type: 3}
+  _randomSpawns: {fileID: 11400000, guid: 1577365aec9ccb3438ae86fafa4a0e8b, type: 2}
   _spawnPoint: {fileID: 3334356623504837125}
