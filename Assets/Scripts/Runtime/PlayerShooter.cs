@@ -24,15 +24,26 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioResource _clip;
 
+    private int _damageModifier;
+
     private void Awake ()
     {
         _inputAction.performed += (_) => OnShoot();
-        _bulletPool = new(CreateBullet, GetFromPool, ReturnToPool, DestroyPooledObject, 20, 40);
+        _bulletPool = new(CreateBullet, GetFromPool, ReturnToPool, DestroyPooledObject, 20, 60);
+        Item.OnShotSpeedChange += OnShotSpeedChange;
+        Item.OnShotDamageChange += OnShotDamageChange;
     }
-
+    private void OnShotSpeedChange(float speedChange) => _delayTime = Mathf.Max(_delayTime + speedChange, 0.1f);
+    private void OnShotDamageChange(int dmg) => _damageModifier = Mathf.Max(_damageModifier + dmg, 5);
     private void OnEnable () => _inputAction.Enable();
     private void OnDisable () => _inputAction.Disable();
-    private void OnDestroy () => _inputAction.Dispose();
+    private void OnDestroy ()
+    {
+        _inputAction.Dispose();
+        Item.OnShotDamageChange -= OnShotDamageChange;
+        Item.OnShotSpeedChange -= OnShotSpeedChange;
+    }
+
     private void OnShoot()
     {
         if (Time.time < _lastFireTime + _delayTime)
@@ -46,6 +57,7 @@ public class PlayerShooter : MonoBehaviour
         _audioSource.Play();
 
         var bullet = _bulletPool.FromPool();
+        bullet.SetDamageModifier(_damageModifier);
         bullet.Shoot(Vector3.forward * _bulletForce);
     }
 
