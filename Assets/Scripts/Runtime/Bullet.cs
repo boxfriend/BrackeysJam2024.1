@@ -7,7 +7,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] private Rigidbody _rigidbody;
     public event Action<Bullet> OnCollide;
 
-    public void AddDamageModifier (int amount) => _damage = Mathf.Max(_damage + amount, 0);
+    private int _currentDamage;
+    public void SetDamageModifier (int amount) => _currentDamage = Mathf.Max(_damage + amount, 1);
 
     public void Freeze()
     {
@@ -34,7 +35,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter (Collision collision)
     {
         if (collision.collider.TryGetComponent(out DamageTaker damager))
-            damager.Damage(_damage);
+            damager.Damage(_currentDamage);
 
         OnCollide?.Invoke(this);
     }
